@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * 启动VPN的配置
  *
- * @author https://github.com/lbl8603/vnt
+ * @author https://github.com/h70076333/HxznApp
  */
 public class DeviceConfig {
     public int virtualIp;
