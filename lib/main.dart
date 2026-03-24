@@ -125,7 +125,7 @@ Future<void> main() async {
     } else {
       // Windows 和 Linux 保持原有逻辑
       final windowSize = await DataPersistence().loadWindowSize();
-      windowManager.setTitle('VNT App');
+      windowManager.setTitle('HXZN App');
 
       // 只在 Windows 10+ 上使用自定义标题栏，Windows 7 使用系统标题栏
       if (!Platform.isWindows || isWindows10OrGreater()) {
