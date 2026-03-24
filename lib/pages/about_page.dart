@@ -494,8 +494,7 @@ class _AboutPageState extends State<AboutPage> {
             icon: Icons.description_rounded,
             title: '官方文档',
             subtitle: '宏兴科技有限公司',
-            title: '13542233768',
-            title: '微信同号',
+            onTap: () => _launchUrl('13542233768'),
           ),
           SizedBox(height: context.spacingSmall),
 
