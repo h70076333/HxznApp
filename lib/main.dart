@@ -344,7 +344,7 @@ class _MainAppState extends State<MainApp> with WindowListener {
         });
 
         await vntManager.create(config, receivePort.sendPort);
-        debugPrint('磁贴启动：VntBox��建完成，等待连接结果');
+        debugPrint('磁贴启动：HxznBox��建完成，等待连接结果');
       } catch (e) {
         debugPrint('磁贴启动连接失败: $e');
         // 连接异常，更新磁贴和小组件状态
