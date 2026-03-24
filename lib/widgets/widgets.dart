@@ -1,4 +1,4 @@
-/// VNT App 通用组件库
+/// HXZN App 通用组件库
 library vnt_widgets;
 
 export 'status_card.dart';
