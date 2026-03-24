@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'color_utils.dart';
 import '../utils/responsive_utils.dart';
 
-/// VNT App 主题配置
+/// HXZN App 主题配置
 /// 支持日间模式和暗黑模式
 class AppTheme {
   // 主色调 - 青绿色 (#00BFA5 / Teal)
