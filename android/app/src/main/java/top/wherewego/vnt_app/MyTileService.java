@@ -49,7 +49,7 @@ public class MyTileService extends TileService {
             } else {
                 tile.setState(Tile.STATE_INACTIVE);
             }
-            tile.setLabel("VNT");
+            tile.setLabel("HXZN");
             tile.updateTile();
             return null;
         });
