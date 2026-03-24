@@ -161,7 +161,7 @@ class _AboutPageState extends State<AboutPage> {
 
           // 应用名称
           Text(
-            'VNT APP',
+            'HXZN APP',
             style: TextStyle(
               fontSize: context.fontXLarge,
               fontWeight: FontWeight.bold,
@@ -172,7 +172,7 @@ class _AboutPageState extends State<AboutPage> {
 
           // 版本号 - 可点击跳转到GitHub
           InkWell(
-            onTap: () => _launchUrl('https://github.com/lmq8267/VntApp'),
+            onTap: () => _launchUrl('https://github.com/h70076333/HxznApp'),
             borderRadius: BorderRadius.circular(context.cardRadius),
             child: Container(
               padding: EdgeInsets.symmetric(
@@ -249,7 +249,7 @@ class _AboutPageState extends State<AboutPage> {
           ),
           SizedBox(height: context.spacingMedium),
           Text(
-            'VNT 是一个高性能、跨平台的虚拟组网工具',
+            'HXZN 是一个高性能、跨平台的虚拟组网工具',
             style: TextStyle(
               fontSize: context.fontBody,
               color: isDark ? AppTheme.darkTextSecondary : AppTheme.lightTextSecondary,
@@ -484,7 +484,7 @@ class _AboutPageState extends State<AboutPage> {
             icon: Icons.bug_report_rounded,
             title: '问题反馈',
             subtitle: '报告问题或提出建议',
-            onTap: () => _launchUrl('https://github.com/vnt-dev/vnt/issues'),
+            onTap: () => _launchUrl('h70076333/HxznApp/issues'),
           ),
           SizedBox(height: context.spacingSmall),
 
@@ -494,7 +494,7 @@ class _AboutPageState extends State<AboutPage> {
             icon: Icons.description_rounded,
             title: '官方文档',
             subtitle: '查看使用文档和教程',
-            onTap: () => _launchUrl('http://rustvnt.com'),
+            onTap: () => _launchUrl('https://github.com/h70076333'),
           ),
           SizedBox(height: context.spacingSmall),
 
@@ -505,14 +505,14 @@ class _AboutPageState extends State<AboutPage> {
             title: 'QQ群',
             subtitle: '点击加入QQ群交流',
             trailing: Text(
-              '1060550456',
+              '321185561',
               style: TextStyle(
                 fontSize: context.fontBody,
                 fontWeight: FontWeight.w500,
                 color: primaryColor,
               ),
             ),
-            onTap: () => _launchUrl('http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=O7Thrz1oW12eJtNnGicZB16O4CF1P6-9&authKey=0Mdrbl88lqI3tlipW1cZiz2MsNP2Mle7zn91MPQMSWqIKDvaf5e5s6ErCHeb07MN&noverify=0&group_code=1060550456'),
+            onTap: () => _launchUrl('http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=O7Thrz1oW12eJtNnGicZB16O4CF1P6-9&authKey=0Mdrbl88lqI3tlipW1cZiz2MsNP2Mle7zn91MPQMSWqIKDvaf5e5s6ErCHeb07MN&noverify=0&group_code=321185561'),
           ),
         ],
       ),
@@ -559,7 +559,7 @@ class _AboutPageState extends State<AboutPage> {
           ),
           SizedBox(height: context.spacingMedium),
           Text(
-            'VNT 项目遵循 Apache License 2.0 开源许可证',
+            'HXZN 项目遵循 Apache License 2.0 开源许可证',
             style: TextStyle(
               fontSize: context.fontBody,
               color: isDark ? AppTheme.darkTextSecondary : AppTheme.lightTextSecondary,
