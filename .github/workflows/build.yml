@@ -285,14 +285,14 @@ jobs:
           flutter pub get
           flutter build macos --release
 
-          APP_PATH="build/macos/Build/Products/Release/vnt_app.app"
+          APP_PATH="build/macos/Build/Products/Release/hxzn_app.app"
           DMG_PATH="vnt_APP.dmg"
 
           echo "构建完成，产物位于：$APP_PATH"
 
           # 确保可执行文件有正确的权限
           echo "设置可执行权限..."
-          chmod +x "$APP_PATH/Contents/MacOS/vnt_app"
+          chmod +x "$APP_PATH/Contents/MacOS/hxzn_app"
 
           # 代码签名（用 ad-hoc 签名）
           echo "对应用进行代码签名..."
@@ -324,7 +324,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.NAME }}
-          path: ${{ runner.os == 'Windows' && 'vntApp-windows.zip' || runner.os == 'macOS' && 'vnt_APP.dmg' || 'vntApp-android.apk' }}
+          path: ${{ runner.os == 'Windows' && 'vntApp-windows.zip' || runner.os == 'macOS' && 'hxzn_APP.dmg' || 'vntApp-android.apk' }}
 
   deploy:
     needs: build
