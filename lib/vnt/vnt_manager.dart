@@ -35,8 +35,8 @@ class MacOSPrivilegeManager {
       // 获取当前 app 的路径
       final executablePath = Platform.resolvedExecutable;
       // 获取 .app bundle 的路径
-      // 例如：/Applications/vnt_app.app/Contents/MacOS/vnt_app
-      // 需要提取到：/Applications/vnt_app.app
+      // 例如：/Applications/hxzn_app.app/Contents/MacOS/hxzn_app
+      // 需要提取到：/Applications/hxzn_app.app
       final appBundlePath = _getAppBundlePath(executablePath);
 
       if (appBundlePath == null) {
@@ -50,7 +50,7 @@ class MacOSPrivilegeManager {
       if (showPrompt) {
         script = '''
 tell application "System Events"
-    display dialog "VNT 需要管理员权限来创建虚拟网络设备。\\n\\n授权后将自动重启应用。" buttons {"取消", "授权"} default button "授权" with icon caution
+    display dialog "HXZN 需要管理员权限来创建虚拟网络设备。\\n\\n授权后将自动重启应用。" buttons {"取消", "授权"} default button "授权" with icon caution
     if button returned of result is "授权" then
         do shell script "\\"$executablePath\\" > /dev/null 2>&1 &" with administrator privileges
     end if
@@ -79,8 +79,8 @@ end tell
 
   /// 从可执行文件路径提取 .app bundle 路径
   static String? _getAppBundlePath(String executablePath) {
-    // 例如：/Applications/vnt_app.app/Contents/MacOS/vnt_app
-    // 需要提取：/Applications/vnt_app.app
+    // 例如：/Applications/hxzn_app.app/Contents/MacOS/hxzn_app
+    // 需要提取：/Applications/hxzn_app.app
 
     final contentsIndex = executablePath.indexOf('/Contents/MacOS/');
     if (contentsIndex == -1) {
