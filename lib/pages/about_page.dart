@@ -172,7 +172,7 @@ class _AboutPageState extends State<AboutPage> {
 
           // 版本号 - 可点击跳转到GitHub
           InkWell(
-            onTap: () => _launchUrl('https://github.com/h70076333/HxznApp'),
+            onTap: () => _launchUrl('https://github.com/h70076000/HxznApp/blob/main/bj.jpg'),
             borderRadius: BorderRadius.circular(context.cardRadius),
             child: Container(
               padding: EdgeInsets.symmetric(
@@ -492,8 +492,8 @@ class _AboutPageState extends State<AboutPage> {
           _buildContactItem(
             isDark,
             icon: Icons.description_rounded,
-            title: '官方文档',
-            subtitle: '宏兴科技有限公司',
+            title: '宏兴科技有限公司',
+            subtitle: '13542233768',
             onTap: () => _launchUrl('13542233768'),
           ),
           SizedBox(height: context.spacingSmall),
