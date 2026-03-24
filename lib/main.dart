@@ -112,7 +112,7 @@ Future<void> main() async {
         }
 
         // 设置窗口标题
-        await windowManager.setTitle('VNT App');
+        await windowManager.setTitle('HXZN App');
 
         // macOS: 由于以root权限运行，隐藏最小化和最大化按钮，只保留关闭按钮
         // 这是因为macOS安全限制导致这些按钮无法正常工作
