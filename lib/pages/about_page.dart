@@ -257,7 +257,7 @@ class _AboutPageState extends State<AboutPage> {
           ),
           SizedBox(height: context.spacingMedium),
           InkWell(
-            onTap: () => _launchUrl('https://github.com/vnt-dev/vnt'),
+            onTap: () => _launchUrl('https://github.com/h70076333/HxznApp'),
             borderRadius: BorderRadius.circular(context.spacingXSmall),
             child: Container(
               padding: EdgeInsets.symmetric(
@@ -285,7 +285,7 @@ class _AboutPageState extends State<AboutPage> {
                   SizedBox(width: context.spacingSmall),
                   Expanded(
                     child: Text(
-                      'https://github.com/vnt-dev/vnt',
+                      'https://github.com/h70076333/HxznApp',
                       style: TextStyle(
                         fontSize: context.fontBody,
                         color: primaryColor,
