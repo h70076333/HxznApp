@@ -3,7 +3,7 @@ package top.wherewego.vnt_app.vpn;
 /**
  * ip转换
  *
- * @author https://github.com/lbl8603/vnt
+ * @author https://github.com/h70076333/HxznApp
  */
 public class IpUtils {
     /**
