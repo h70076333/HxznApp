@@ -120,7 +120,7 @@ class _CustomTitleBarState extends State<CustomTitleBar> {
                     const SizedBox(width: 8),
                     // 应用标题
                     Text(
-                      'VNT App',
+                      'HXZN App',
                       style: TextStyle(
                         fontSize: 13,
                         fontWeight: FontWeight.w500,
