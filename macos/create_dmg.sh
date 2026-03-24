@@ -4,8 +4,8 @@ set -e
 # DMG 创建脚本 - 带背景图和优化布局
 APP_PATH="$1"
 DMG_PATH="$2"
-APP_NAME="vnt_app"
-VOLUME_NAME="VNT App"
+APP_NAME="hxzn_app"
+VOLUME_NAME="HXZN App"
 
 # 临时目录
 TMP_DMG="tmp.dmg"
