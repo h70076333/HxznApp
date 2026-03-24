@@ -93,7 +93,7 @@ public class MyVpnService extends VpnService {
             }
         }
         try {
-            vpnInterface = builder.setSession("VNT")
+            vpnInterface = builder.setSession("HXZN")
                     .establish();
         } catch (Exception e) {
             Log.e(TAG, "Error establishing VPN interface", e);
