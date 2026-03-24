@@ -398,7 +398,7 @@ class _MainNavigationShellState extends State<MainNavigationShell> {
                   ),
                   SizedBox(height: logoSpacing),
                   Text(
-                    'VNT',
+                    'HXZN',
                     style: TextStyle(
                       fontSize: logoFontSize,
                       fontWeight: FontWeight.bold,
