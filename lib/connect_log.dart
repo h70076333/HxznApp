@@ -63,8 +63,8 @@ class _LogPageState extends State<LogPage> {
       await for (var entity in logsDirEntity.list()) {
         if (entity is File) {
           final fileName = path.basename(entity.path);
-          // 匹配 vnt-core.log 和 vnt-core.1.log, vnt-core.2.log 等
-          if (fileName.startsWith('vnt-core') && fileName.endsWith('.log')) {
+          // 匹配 hxzn-core.log 和 hxzn-core.1.log, hxzn-core.2.log 等
+          if (fileName.startsWith('hxzn-core') && fileName.endsWith('.log')) {
             logFiles.add(entity.path);
             debugPrint('找到日志文件: ${entity.path}');
           }
@@ -81,13 +81,13 @@ class _LogPageState extends State<LogPage> {
 
       debugPrint('共找到 ${logFiles.length} 个日志文件');
 
-      // 按文件名排序（vnt-core.log 应该是最新的）
+      // 按文件名排序（hxzn-core.log 应该是最新的）
       logFiles.sort((a, b) {
         final aName = path.basename(a);
         final bName = path.basename(b);
-        // vnt-core.log 排在最前面
-        if (aName == 'vnt-core.log') return -1;
-        if (bName == 'vnt-core.log') return 1;
+        // hxzn-core.log 排在最前面
+        if (aName == 'hxzn-core.log') return -1;
+        if (bName == 'hxzn-core.log') return 1;
         return aName.compareTo(bName);
       });
 
@@ -665,7 +665,7 @@ class _LogPageState extends State<LogPage> {
       if (Platform.isAndroid) {
         // Android 平台下载日志
         final directory = await getTemporaryDirectory();
-        final fileName = 'vnt_logs_${DateTime.now().millisecondsSinceEpoch}.txt';
+        final fileName = 'hxzn_logs_${DateTime.now().millisecondsSinceEpoch}.txt';
         final filePath = '${directory.path}/$fileName';
 
         final file = File(filePath);
@@ -703,7 +703,7 @@ class _LogPageState extends State<LogPage> {
       } else {
         // Windows/macOS/Linux 平台使用文件选择器
         final timestamp = DateTime.now().millisecondsSinceEpoch;
-        final fileName = 'vnt_logs_$timestamp.txt';
+        final fileName = 'hxzn_logs_$timestamp.txt';
 
         // 让用户选择保存位置
         String? savePath = await FilePicker.platform.saveFile(
