@@ -723,7 +723,7 @@ class _ConfigListPageState extends State<ConfigListPage> {
     }
   }
 
-  // 连接VNT
+  // 连接HXZN
   Future<void> _connectVnt(NetworkConfig config) async {
     // 检查是否已有连接
     if (vntManager.hasConnection()) {
