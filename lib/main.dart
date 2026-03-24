@@ -208,7 +208,7 @@ class _VntAppState extends State<VntApp> {
       setCustomThemeColor: _setCustomThemeColor,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'VNT App',
+        title: 'HXZN App',
         theme: AppTheme.createLightTheme(_customThemeColor),
         darkTheme: AppTheme.createDarkTheme(_customThemeColor),
         themeMode: _themeMode,
@@ -551,8 +551,8 @@ Future<void> initSystemTray() async {
 
   // 初始化系统托盘
   await systemTray.initSystemTray(
-    title: "VNT",
-    toolTip: "VNT - Virtual Network Tool",
+    title: "HXZN",
+    toolTip: "HXZN - Virtual Network Tool",
     iconPath: path,
   );
 
