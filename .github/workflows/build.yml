@@ -324,7 +324,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.NAME }}
-          path: ${{ runner.os == 'Windows' && 'vntApp-windows.zip' || runner.os == 'macOS' && 'hxzn_APP.dmg' || 'vntApp-android.apk' }}
+          path: ${{ runner.os == 'Windows' && 'vntApp-windows.zip' || runner.os == 'macOS' && 'vnt_APP.dmg' || 'vntApp-android.apk' }}
 
   deploy:
     needs: build
